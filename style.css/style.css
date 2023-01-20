@@ -1,0 +1,253 @@
+@font-face {
+    font-family: "BebasRegular";
+    src: url("../fonts/BebasRegular/BebasRegular.eot");
+    src: url("../fonts/BebasRegular/BebasRegular.eot?#iefix")format("embedded-opentype"),
+        url("../fonts/BebasRegular/BebasRegular.woff") format("woff"),
+        url("../fonts/BebasRegular/BebasRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "BebasBook";
+    src: url("../fonts/BebasBook/BebasBook.eot");
+    src: url("../fonts/BebasBook/BebasBook.eot?#iefix")format("embedded-opentype"),
+        url("../fonts/BebasBook/BebasBook.woff") format("woff"),
+        url("../fonts/BebasBook/BebasBook.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "BebasBold";
+    src: url("../fonts/BebasBold/BebasBold.eot");
+    src: url("../fonts/BebasBold/BebasBold.eot?#iefix")format("embedded-opentype"),
+        url("../fonts/BebasBold/BebasBold.woff") format("woff"),
+        url("../fonts/BebasBold/BebasBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "BebasLight";
+    src: url("../fonts/BebasLight/BebasLight.eot");
+    src: url("../fonts/BebasLight/BebasLight.eot?#iefix")format("embedded-opentype"),
+        url("../fonts/BebasLight/BebasLight.woff") format("woff"),
+        url("../fonts/BebasLight/BebasLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "BebasThin";
+    src: url("../fonts/Bebas/");
+    src: url("../fonts/BebasThin/BebasThin.eot?#iefix")format("embedded-opentype"),
+        url("../fonts/BebasThin/BebasThin.woff") format("woff"),
+        url("../fonts/BebasThin/BebasThin.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+body {
+    background: #9789F9;
+    padding: 8.33vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.main__card {
+    width: 370px;
+    height: 611px;
+    background: #F5F3F9;
+    position: relative;
+    margin-right: 30px;
+    text-align: center;
+}
+
+.main__card:last-child {
+    margin: 0;
+}
+
+.main__card::after {
+    content: '';
+    background-image: url(../img/bg-image.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    top: 77%;
+}
+
+.main__card-big::after {
+    background-image: url(../img/bg-image-big.png);
+}
+
+.main__card-big {
+    width: 400px;
+    height: 673px;
+}
+
+.main__price-wrapper {
+    width: 80px;
+    font-family: 'BebasThin';
+    font-style: normal;
+    color: #000000;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 40px auto 0;
+}
+
+.main__card-big .main__price-wrapper {
+    margin: 50px auto 0;
+}
+
+.main__dollar {
+    font-size: 24px;
+    line-height: 28px;
+    color: #181818;
+}
+
+.main__price {
+    font-family: 'BebasBook';
+    font-size: 60px;
+    line-height: 46px;
+    letter-spacing: 0.08em;
+    
+}
+
+.main__hours {
+    font-family: 'BebasThin';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.08em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.main__profession-title {
+    text-transform: uppercase;
+    font-family: 'BebasBook';
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    margin: 20px 0 70px 0;
+}
+
+.main__card-big .main__profession-title {
+    margin: 20px 0 80px 0;
+}
+
+.main__education-topics {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    position: relative;
+    z-index: 100;
+    margin: 0 auto 117px;
+    width: 150px;
+}
+
+.main__card-big .main__education-topics {
+    margin-bottom: 114px;
+    width: 168px;
+}
+
+.main__education-topic {
+    margin-bottom: 30px;
+}
+
+.main__btn {
+    position: absolute;
+    width: 13.88vw;
+    max-width: 200px;
+    height: 54px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    bottom: -9%;
+    background: #6FCFFB;
+    border-radius: 30px;
+    font-family: 'BebasRegular';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    cursor: pointer;
+    z-index: 400;
+}
+
+.main__card-big-btn {
+    background: #FD8D7B;
+    bottom: 6%;
+    z-index: 200;
+}
+
+.main__profession-icon {
+    position: relative;
+    z-index: 100;
+    margin-bottom: 40px;
+}
+
+.main__card-big-notification {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #A9A9A9;
+}
+
+.badge-wrapper {
+    background-image: url(../img/Badge.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 68px;
+    height: 54px;
+    position: absolute;
+    top: 10px;
+    right: 10px;  
+}
+
+.badge-wrapper:hover::after {
+    content: '';
+    background-image: url(../img/Tooltip.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 101px;
+    height: 30px;
+    top: 30%;
+    left: 80%;
+    z-index: 300;
+}
+
+
+
+
